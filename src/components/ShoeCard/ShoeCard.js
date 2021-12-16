@@ -63,6 +63,7 @@ const ImageWrapper = styled.div`
   position: relative;
   border-radius: 16px 16px 4px 4px;
   overflow: hidden;
+  line-height: 0;
 `;
 
 const Image = styled.img`
