@@ -12,7 +12,7 @@ const ShoeCard = ({
   price,
   salePrice,
   releaseDate,
-  numOfColors,
+  numOfColors
 }) => {
   // There are 3 variants possible, based on the props:
   //   - new-release
@@ -32,8 +32,8 @@ const ShoeCard = ({
       : 'default'
 
   return (
-    <Link href={`/shoe/${slug}`}>
-      <Wrapper>
+    <Wrapper>
+      <Link href={`/shoe/${slug}`}>
         <ImageWrapper>
           <Image alt="" src={imageSrc} />
         </ImageWrapper>
@@ -45,8 +45,8 @@ const ShoeCard = ({
         <Row>
           <ColorInfo>{pluralize('Color', numOfColors)}</ColorInfo>
         </Row>
-      </Wrapper>
-    </Link>
+      </Link>
+    </Wrapper>
   );
 };
 
@@ -55,16 +55,26 @@ const Link = styled.a`
   color: inherit;
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  flex: 1 1 300px;
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
+  border-radius: 16px 16px 4px 4px;
+  overflow: hidden;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+`;
 
 const Row = styled.div`
   font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Name = styled.h3`

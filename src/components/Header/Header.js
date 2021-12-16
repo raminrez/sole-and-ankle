@@ -37,8 +37,9 @@ const MainHeader = styled.div`
   padding: 22px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
   display: flex;
-  // justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 32px;
 `;
 const Spacer = styled.div`
   flex: 1;
