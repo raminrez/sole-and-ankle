@@ -56,7 +56,7 @@ const Link = styled.a`
 `;
 
 const Wrapper = styled.article`
-  flex: 1 1 300px;
+  flex: 1 1 320px;
 `;
 
 const ImageWrapper = styled.div`

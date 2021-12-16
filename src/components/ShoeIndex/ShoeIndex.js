@@ -49,6 +49,9 @@ const Wrapper = styled.div`
 
 const LeftColumn = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
 `;
 
 const MainColumn = styled.div`
